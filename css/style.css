@@ -1,0 +1,224 @@
+/*Theme Name: Aachi
+Theme URI: http://aachimasala.com/
+Description: This theme designed for Aachi Masala company website by JJ Softwares, Inc. 
+Author: JJS Samuel and JJS Charly
+URI: http://jjs.in/
+Version: 1.0
+Tags: red, white, two-columns, fixed-width, products-Listing, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+*/
+@charset "utf-8";
+@import url("Theme.css");
+@import url("anythingslider.css");
+.CompanyNews{margin-top:-20px;padding:0px;}#latest-post img.front-list_thumbnail, #recent-posts 
+img.front-list_thumbnail, #front-list 
+img.front-list_thumbnail {float:left;margin-right: 10px;padding: 1px;background:#fff;border:1px solid #ccc;}
+.popcontainer{border-bottom: 1px solid #D0CDC5;width: 274px;float: left;padding: 0 0 15px 0;margin: 0 0 15px 0;}
+.popthumb{width: 60px;float: left;background: #D0CDC5;padding: 5px;margin: 0 10px 0 0;}
+.popcontent{width: 185px;float: left;}
+.popcontent h2{font-size: 13px;margin: 0 0 3px 0;padding: 0;}
+.popcontent h2 a{text-decoration: none;}
+
+.tlabelrep
+{
+float: left;
+margin-top: 2px;
+margin-right: 0px;
+margin-bottom: 2px;
+margin-left: 20px;
+color: #5f0f0e;
+width: 200px;
+height: 30px;
+padding-top: 15px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 15px;
+font-weight: bold;
+font-size: 13px;
+}
+/* popup display @ home page Added on : 22 oct 2012 */
+
+.popupDivStyle
+{
+	display: none;
+	position: fixed;
+	_position: absolute; /* hack for internet explorer 6*/
+	/*height: 300px;
+	width: 500px;
+	background: #FFFFFF; */
+	border: 4px solid #F7AD4A; /* 73539E*/
+	z-index: 9999;/* To Position the popup over other Elements : slide show etc..*/
+	padding: 12px;
+	font-size: 13px;
+	font-family: Verdana; /*color:#2F5890;*/
+	color: #4B0D72;
+}
+/* popup */
+.popupDivCloseStyle
+{
+	font-size: 14px;
+	line-height: 14px;
+	right: 6px;
+	top: 4px;
+	position: absolute;
+	text-decoration: none;
+	border: 0px;
+	display: block;
+}
+.popupDivBackgroundStyle
+{
+	display: none;
+	position: fixed;
+	_position: absolute; /* hack for internet explorer 6*/
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #282828;
+	border: 1px solid #cecece;
+	z-index: 1;
+}
+/* slide panel */
+.slidePanelDivStyle
+{
+	display: none;
+	width:100%;
+	background: #EC9134; /* face4e FCDF6A*/
+	border-top-width:3px;
+	border-top-style:solid;
+	border-top-color:#face4e; /* EC9134 */
+	z-index: 2;
+	padding: 5px;
+	font-size: 13px;
+	font-family: Verdana; 
+}
+.slidePanelDivCloseStyle
+{
+	font-size: 14px;
+	line-height: 14px;
+	right: 40px;
+	top: 4px;
+	position: absolute;
+	text-decoration: none;
+	display: block;
+}
+/* slide panel */
+
+<!-- --------------------------------    MY MENU  ----------------------------------------------->
+
+#nav {padding:0; margin:0px 0px 0px 0px; list-style:none; height:38px;}
+#nav li.top {display:block; float:left; height:38px;}
+#nav li a.top_link {display:block; float:left; height:35px; line-height:33px; color:#993300; text-decoration:none; font-size:11px; font-weight:bold; padding:0 0 0 12px; cursor:pointer;}
+#nav li a:hover.top_link {color:#666666;}
+#nav li a.top_link span {float:left; display:block; padding:0 24px 0 12px; height:35px; }
+#nav li a.top_link span.down {float:left; display:block; padding:0 24px 0 12px; height:35px; }
+
+/*#nav li:hover a.top_link {color:#fff; background: url(three_1.gif) no-repeat;}
+#nav li:hover a.top_link span {background:url(three_1.gif) no-repeat right top;}
+#nav li:hover a.top_link span.down {background:url(three_1a.gif) no-repeat right top;}*/
+
+/* Default list styling */
+
+#nav li:hover {position:relative; z-index:200; color:#CCCCCC;}
+
+#nav li:hover ul.sub
+{left:1px; top:38px; background:#D0B17A; padding:3px; border:1px solid #D0B17A; white-space:nowrap; width:160px; height:auto; z-index:300;}
+#nav li:hover ul.sub li
+{display:block; height:20px; position:relative; text-align:left; padding-left:5px; float:left; width:90px; font-weight:normal;}
+#nav li:hover ul.sub li a
+{display:block; font-size:13px; height:18px; width:88px; line-height:18px; color:#000; text-decoration:none;border:1px solid ##D0B17A;}
+#nav li ul.sub li a.fly
+{background:#bbd37e url(arrow.gif) 80px 6px no-repeat;}
+#nav li:hover ul.sub li a:hover 
+{background:##D0B17A; color:#fff;}
+#nav li:hover ul.sub li a.fly:hover
+{background:#6a812c url(arrow_over.gif) 80px 6px no-repeat; color:#fff;}
+
+
+#nav li:hover li:hover ul,
+#nav li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover li:hover ul
+{left:90px; top:-4px; background: #bbd37e; padding:3px; border:1px solid #5c731e; white-space:nowrap; width:90px; z-index:400; height:auto;}
+
+#nav ul, 
+#nav li:hover ul ul,
+#nav li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+#nav li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover li:hover a.fly
+{background:#6a812c url(arrow_over.gif) 80px 6px no-repeat; color:#fff; border-color:#fff;} 
+
+#nav li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li:hover li a.fly
+{background:#bbd37e url(arrow.gif) 80px 6px no-repeat; color:#000; border-color:#bbd37e;} 
+
+#path
+{
+font-size:12px;
+color:#0000CC;
+}
+
+#path a
+{
+text-decoration:none;
+}
+
+#path a:hover
+{
+font-size:12px;
+color:#FF0000;
+}
+#path a:visited
+{
+font-size:12px;
+color:#0000CC;
+}
+
+#success
+{
+font-size:12px;
+font-weight:bold;
+color:#009900;
+}
+
+#error
+{
+font-size:12px;
+font-weight:bold;
+color:#FF0000;
+}
+#a_headertopcaption
+{
+	color:#CFF;
+	font-weight:bold;
+	font-size:12px;
+	text-decoration:none;
+	margin-right:20px;
+	margin-top:10px;
+}
+.hcontent
+{
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+}
+.tinnercontent
+{
+    color:#333333;
+	font-size:12px;
+	text-decoration:none;
+}
+.tinnercontent a
+{
+    color:#0066FF;
+	text-decoration:none;
+	font-size:12px;
+	text-decoration:none;
+}
+
