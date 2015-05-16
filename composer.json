@@ -5,8 +5,8 @@
     "type": "yii2-extension",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/sundarb1989/dev-master/issues",
-        "source": "https://github.com/sundarb1989/dev-master"
+        "issues": "https://github.com/sundarb1989/pandian/issues",
+        "source": "https://github.com/sundarb1989/pandian"
     },
     "minimum-stability": "dev",
     "authors": [
@@ -22,6 +22,6 @@
         "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
-        "psr-4": { "sundarb1989\\dev-master\\": "" }
+        "psr-4": { "sundarb1989\\pandian\\": "" }
     }
 }
