@@ -1,27 +1,29 @@
 {
-    "name": "sundarb1989/pandian",
-    "description": "Extension for Yii2 Framework to Test Extension",
-    "keywords": ["yii2", "testing"],
-    "type": "yii2-extension",
-    "license": "MIT",
-    "support": {
-        "issues": "https://github.com/sundarb1989/pandian/issues",
-        "source": "https://github.com/sundarb1989/pandian"
-    },
-    "minimum-stability": "dev",
-    "authors": [
-        {
-            "name": "Sundarapandian",
-            "email": "sundar.b1989@gmail.com"
-        }
-    ],
-    "require": {
-	"yiisoft/yii2": "2.0.*"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "3.7.*"
-    },
-    "autoload": {
-        "psr-4": { "sundarb1989\\pandian\\": "" }
-    }
+	"name": "sundarb1989/pandian",
+	"description": "Extension for Yii2 Framework to Test Extension",
+	"keywords": ["yii2", "testing"],
+	"type": "yii2-extension",
+	"support": {
+	"issues": "",
+	"source": ""
+	},
+	"authors": [
+	{
+		"name": "Sundarapandian",
+		"email": "sundar.b1989@gmail.com"
+	}
+	],
+	"repositories": [
+	{
+		"type": "vcs",
+		"url": "https://github.com/sundarb1989/pandian"
+	}
+	],
+	"require": {
+		"yiisoft/yii2": "*",
+		"yiisoft/yii2-bootstrap": "*"
+	},
+	"autoload": {
+		"psr-4": { "sundarb1989\\pandian\\": "" }
+	}
 }
