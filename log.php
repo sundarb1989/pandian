@@ -90,4 +90,5 @@ my conflict
 pandin conflict
 pandian test
 >>>>>>> bdb5dd58d755ce81e3e4066a9a87dd1e8b4cb32a
+both conflict
 ?>
