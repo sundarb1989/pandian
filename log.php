@@ -12,26 +12,6 @@ echo "git test";
 		return mysql_real_escape_string($str);
 	}
 
-	$errmsg = array(); //Array to store errors
-	
-	$errflag = false; //Error flag
-
-	$username = Fix($_POST['username']); //Username
-	$password = Fix($_POST['password']); //Password
-
-	//Check Username
-	if($username == '') {
-		$errmsg[] = 'Username missing';
-		$errflag = true;
-	}
-
-	//Check Password
-	if($password == '') {
-		$errmsg[] = 'Password missing';
-		$errflag = true;
-	}
-	
-
 	//Create SELECT query
 	$qry = "SELECT DISTINCT emp_code, `password`, emp_id, role_id, emp_name FROM `employee_master` WHERE `emp_code` = '$username' AND `password` = '$password' GROUP BY emp_code";
 
