@@ -1,4 +1,5 @@
 <?php
+echo "git test";
     ob_start();
 	require_once("class/db.php"); //Connect to SQL
 	session_start(); //Start session for writing
