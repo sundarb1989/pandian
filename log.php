@@ -81,4 +81,5 @@ echo "git test";
 my revision check
 now kidff test
 both conflict
+new test
 ?>
