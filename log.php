@@ -79,16 +79,6 @@ echo "git test";
 	    }
 	ob_flush();
 my revision check
-<<<<<<< HEAD
-<<<<<<< HEAD
-pandin conflict
-=======
-pandian test	
->>>>>>> dc36155182cde74e2150e0a29f48824e6e37947a
-my conflict
-=======
-pandin conflict
-pandian test
->>>>>>> bdb5dd58d755ce81e3e4066a9a87dd1e8b4cb32a
 now kidff test
+both conflict
 ?>
