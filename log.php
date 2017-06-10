@@ -48,8 +48,10 @@ echo "git test";
 		{
 		 header("location: index.php?log=err");
 		}
+
 		
 	}
+	//commnet
 	if(mysql_num_rows($result) == 1) 
 	{
 		while($row = mysql_fetch_assoc($result)) 
