@@ -79,9 +79,6 @@ echo "git test";
 	    }
 	ob_flush();
 my revision check
-<<<<<<< HEAD
 pandin conflict
-=======
-pandian test	
->>>>>>> dc36155182cde74e2150e0a29f48824e6e37947a
+pandian test
 ?>
