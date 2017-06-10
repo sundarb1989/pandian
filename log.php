@@ -51,7 +51,8 @@ echo "git test";
 
 		
 	}
-	//commnet ,pst lets see
+	//commnet please check lets see
+	
 if(mysql_num_rows($result) == 1) 
 	{
 		while($row = mysql_fetch_assoc($result)) 
