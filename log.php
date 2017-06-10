@@ -31,6 +31,8 @@ echo "git test";
 		exit();
 	}
 	//Check whether the query was successful or not
+
+final ttest comes here
 	
 	if(mysql_num_rows($result) == 1) 
 	{
