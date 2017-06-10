@@ -31,7 +31,25 @@ echo "git test";
 		exit();
 	}
 	//Check whether the query was successful or not
-	
+	if(mysql_num_rows($result) == 1) 
+	{
+		while($row = mysql_fetch_assoc($result)) 
+		{
+				$_SESSION['emp_id'] = $row['emp_id'];
+				$_SESSION['login_id'] = $row['emp_code'];
+				$_SESSION['role_id'] = $row['role_id'];
+			
+		}
+		if(isset($_SESSION['login_id']))
+		{
+		 header("location: pages/view_employee.php");
+		}
+		else
+		{
+		 header("location: index.php?log=err");
+		}
+		
+	}
 	if(mysql_num_rows($result) == 1) 
 	{
 		while($row = mysql_fetch_assoc($result)) 
