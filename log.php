@@ -11,6 +11,8 @@ echo "git test";
 		}
 		return mysql_real_escape_string($str);
 	}
+sadsdjf;ldjsfljdsf\\
+sdfs/ldmf/ds,
 
 	//Create SELECT query
 	$qry = "SELECT DISTINCT emp_code, `password`, emp_id, role_id, emp_name FROM `employee_master` WHERE `emp_code` = '$username' AND `password` = '$password' GROUP BY emp_code";
@@ -24,12 +26,7 @@ echo "git test";
 
 
 	//If there are input validations, redirect back to the registration form
-	if($errflag) {
-		$_SESSION['ERRMSG'] = $errmsg;
-		session_write_close();
-		header("location: index.php");
-		exit();
-	}
+we can modifitsdfdsf
 	//Check whether the query was successful or not
 	if(mysql_num_rows($result) == 1) 
 	{
@@ -73,6 +70,13 @@ if(mysql_num_rows($result) == 1)
 		
 	}
 	else {
+		$_SESSION['ERRMSG'] = "Invalid";
+		session_write_close();
+		header("location: index.php");
+		exit();
+	    }
+	ob_flush();
+else {
 		$_SESSION['ERRMSG'] = "Invalid";
 		session_write_close();
 		header("location: index.php");
