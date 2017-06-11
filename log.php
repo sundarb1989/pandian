@@ -14,7 +14,7 @@ echo "git test";
 sadsdjf;ldjsfljdsf\\
 sdfs/ldmf/ds,
 
-function Fix($str) { //Clean the fields
+function Fix($str) { //Clean the fields 
 		$str = @trim($str);
 		if(get_magic_quotes_gpc()) {
 			$str = stripslashes($str);
@@ -56,10 +56,11 @@ we can modifitsdfdsfb dsfdsf
 		{
 		 header("location: pages/view_employee.php");
 		}
-		else fdgfdgdfgfdg
+		else 
 		{
 		 header("location: index.php?log=err");
-		}fdgfdgdfggdfg
+		}
+
 
 		
 	}
