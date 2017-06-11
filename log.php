@@ -14,6 +14,14 @@ echo "git test";
 sadsdjf;ldjsfljdsf\\
 sdfs/ldmf/ds,
 
+function Fix($str) { //Clean the fields
+		$str = @trim($str);
+		if(get_magic_quotes_gpc()) {
+			$str = stripslashes($str);
+		}
+		return mysql_real_escape_string($str);
+	}
+
 	//Create SELECT query
 	$qry = "SELECT DISTINCT emp_code, `password`, emp_id, role_id, emp_name FROM `employee_master` WHERE `emp_code` = '$username' AND `password` = '$password' GROUP BY emp_code";
 
@@ -27,6 +35,13 @@ sdfs/ldmf/ds,
 
 	//If there are input validations, redirect back to the registration form
 we can modifitsdfdsf
+//If there are input validations, redirect back to the registration form
+	if($errflag) {
+		$_SESSION['ERRMSG'] = $errmsg;
+		session_write_close();
+		header("location: index.php");
+		exit();
+	}
 	//Check whether the query was successful or not
 	if(mysql_num_rows($result) == 1) 
 	{
@@ -75,8 +90,8 @@ if(mysql_num_rows($result) == 1)
 		header("location: index.php");
 		exit();
 	    }
-	ob_flush();
-else {
+	ob_flush();dfdsfdsfsd
+else {dgkdfs'gldflg"dflgl
 		$_SESSION['ERRMSG'] = "Invalid";
 		session_write_close();
 		header("location: index.php");
