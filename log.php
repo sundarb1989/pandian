@@ -11,10 +11,8 @@ echo "git test";
 		}
 		return mysql_real_escape_string($str);
 	}
-sadsdjf;ldjsfljdsf\\
-sdfs/ldmf/ds,
 
-function Fix($str) { //Clean the fields
+function Fix($str) { //Clean the fields 
 		$str = @trim($str);
 		if(get_magic_quotes_gpc()) {
 			$str = stripslashes($str);
@@ -35,34 +33,7 @@ function Fix($str) { //Clean the fields
 
 	//If there are input validations, redirect back to the registration form
 we can modifitsdfdsf
-//If there are input validations, redirect back to the registration form
-	if($errflag) {
-		$_SESSION['ERRMSG'] = $errmsg;
-		session_write_close();
-		header("location: index.php");
-		exit();
-	}
-	//Check whether the query was successful or not
-	if(mysql_num_rows($result) == 1) 
-	{
-		while($row = mysql_fetch_assoc($result)) 
-		{
-				$_SESSION['emp_id'] = $row['emp_id'];
-				$_SESSION['login_id'] = $row['emp_code'];
-				$_SESSION['role_id'] = $row['role_id'];
-			
-		}
-		if(isset($_SESSION['login_id']))
-		{
-		 header("location: pages/view_employee.php");
-		}
-		else
-		{
-		 header("location: index.php?log=err");
-		}
 
-		
-	}
 	//commnet please check lets see
 	
 if(mysql_num_rows($result) == 1) 
