@@ -20,28 +20,28 @@ function Fix($str) { //Clean the fields
 			$str = stripslashes($str);
 		}
 		return mysql_real_escape_string($str);
-	}
+	}dxfdsfdsf
 
 	//Create SELECT query
 	$qry = "SELECT DISTINCT emp_code, `password`, emp_id, role_id, emp_name FROM `employee_master` WHERE `emp_code` = '$username' AND `password` = '$password' GROUP BY emp_code";
 
 	$result = mysql_query($qry);
-	
+	dsfdsfdsf
 	if(mysql_num_rows($result) == 0 && $username != '' && $password != '') {
 		$errmsg[] = 'Invalid username or password';
 		$errflag = true;
 	}
-
+dsfdsfsdf
 
 	//If there are input validations, redirect back to the registration form
-we can modifitsdfdsf
+we can modifitsdfdsfb dsfdsf
 //If there are input validations, redirect back to the registration form
 	if($errflag) {
-		$_SESSION['ERRMSG'] = $errmsg;
+		$_SESSION['ERRMSG'] = $errmsg; sfdsfsd
 		session_write_close();
 		header("location: index.php");
 		exit();
-	}
+	}dsfdsdsfdsf
 	//Check whether the query was successful or not
 	if(mysql_num_rows($result) == 1) 
 	{
@@ -56,21 +56,21 @@ we can modifitsdfdsf
 		{
 		 header("location: pages/view_employee.php");
 		}
-		else
+		else fdgfdgdfgfdg
 		{
 		 header("location: index.php?log=err");
-		}
+		}fdgfdgdfggdfg
 
 		
 	}
 	//commnet please check lets see
-	
-if(mysql_num_rows($result) == 1) 
+	 dsfdsf
+if(mysql_num_rows($result) == 1) v
 	{
 		while($row = mysql_fetch_assoc($result)) 
 		{
 				$_SESSION['emp_id'] = $row['emp_id'];
-				$_SESSION['login_id'] = $row['emp_code'];
+			dsgfdg	$_SESSION['login_id'] = $row['emp_code'];
 				$_SESSION['role_id'] = $row['role_id'];
 			
 		}
@@ -78,7 +78,7 @@ if(mysql_num_rows($result) == 1)
 		{
 		 header("location: pages/view_employee.php");
 		}
-		else
+		elsefdgdfgfg
 		{
 		 header("location: index.php?log=err");
 		}
